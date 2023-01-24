@@ -12,13 +12,6 @@ $(document).ready(function(){
     
 
 
-        //Get values when user clicks on login 
-        // let jsondata = {
-        //     "User_Email" : UserEmail,
-        //     "User_password" : Password
-        // };
-
-
         //From RestDB
     var settings = {
         "async": true,
