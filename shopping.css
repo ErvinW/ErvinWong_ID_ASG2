@@ -1,0 +1,28 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+    background-color: orange;
+    background-size: cover;
+}
+
+.nav-container
+{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 150px;
+}
+
+.nav-menu
+{
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    margin-right: 80px;
+}
+
+.nav-menu a{
+    font-size: 0.9rem;
+    transition: all 300ms ease;
+}
+  
