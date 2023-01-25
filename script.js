@@ -48,10 +48,7 @@ $(document).ready(function(){
                 window.location.assign("shopping.html"); 
             }
 
-            else{
-                alert("Incorrect username or password");                    
-                return;
-            }
+            
         }
     })
 
