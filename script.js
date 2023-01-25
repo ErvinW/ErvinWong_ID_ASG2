@@ -47,6 +47,11 @@ $(document).ready(function(){
             if (User_Email == User_list[i].User_Email && User_password == User_list[i].User_password){
                 window.location.assign("shopping.html"); 
             }
+
+            else{
+                alert("Incorrect username or password");                    
+                return;
+            }
         }
     })
 
