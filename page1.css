@@ -1,0 +1,42 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* Style for navigation bar */
+.navigation{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #333;
+    color: white;
+    padding: 20px 60px;
+}
+
+
+
+.shoppingCart{
+    position: relative;
+    background-color: #04AA6D;
+    color: #fff;
+    padding: 10px;
+    font-size: 30px;
+    border-radius: 6px;
+}
+
+.cartAmt{
+    font-size: 20px;
+    background-color: red;
+    border-radius: 4px;
+    color: white;
+    position: absolute;
+    top: -15px;
+    right: -12px;
+    padding: 3px;
+}
