@@ -17,6 +17,7 @@ body{
     background-color: #333;
     color: white;
     padding: 20px 60px;
+    margin-bottom: 90px;
 }
 
 
@@ -39,4 +40,66 @@ body{
     top: -15px;
     right: -12px;
     padding: 3px;
+}
+
+/* Styling for products */
+
+.products{
+    display: grid;
+    grid-template-columns: repeat(4, 304px);
+    gap: 100px;
+    justify-content: center;
+}
+
+@media (max-width: 1000px){
+    .products{
+        grid-template-columns: repeat(2, 304px);
+    }
+}
+
+@media (max-width: 500px){
+    .products{
+        grid-template-columns: repeat(1, 304px);
+    }
+}
+
+.Headphones{
+    border: 2px solid black;
+    border-radius: 4px;
+}
+
+.productdeets{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+}
+
+.price-amt{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price-amt h2{
+    margin-left: 10px;
+}
+
+.button{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+
+.bi-plus-lg{
+    color: #04AA6D;
+}
+
+
+.bi-dash-lg{
+    color: red;
 }
