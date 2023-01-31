@@ -45,7 +45,7 @@ $(document).ready(function(){
 
         for (let i = 0; i < User_list.length; i++){
             if (User_Email == User_list[i].User_Email && User_password == User_list[i].User_password){
-                window.location.assign("shopping.html"); 
+                window.location.assign("page1.html"); 
             }
 
             
