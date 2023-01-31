@@ -32,6 +32,11 @@
     background-color: #333;
     overflow: hidden;
     margin : 0;
+    
+  }
+
+  i{
+    background-color: #333;
   }
   
   /* Style the links inside the navigation bar */
@@ -52,11 +57,12 @@
     color: black;
   }
   
-  /* Add an active class to highlight the current page */
-  .topnav a.active {
-    background-color: powderblue;
-    color: black;
-  }
+ .topnav button{
+  color: white;
+  background-color: #333;
+  float: right;
+ }
+
 
 
   
