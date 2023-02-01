@@ -35,7 +35,7 @@ let productdata = [
 let printproducts =()=>{
     return (products.innerHTML = productdata.map((i)=>{
         let {id, ProductName, Price, ProdDesc, img} = i; /* De-structuring */
-        return  `<div id = ${id} class="Headphones">    
+        return  `<div id = product-id-${id} class="Headphones">    
         <img width = "300" src= ${img} alt="">
         <div class="productdeets">
             <h2>${ProductName}</h2>
@@ -44,7 +44,7 @@ let printproducts =()=>{
                 <h2>$${Price}</h2>
                 <div class="button">
                     <i class="bi bi-plus-lg"></i>
-                    <div id = ${id} class="Quantity">0</div>
+                    <div id=${id} class="Quantity">0</div>
                     <i class="bi bi-dash-lg"></i>
                 </div>
             </div>
@@ -53,4 +53,6 @@ let printproducts =()=>{
     }).join(""));
 };
 
-printproducts()
+printproducts();
+
+
