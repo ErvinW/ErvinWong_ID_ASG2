@@ -40,24 +40,28 @@ let productdata = [
 let printproducts =()=>{
     return (products.innerHTML = productdata.map((i)=>{
         let {id, ProductName, Price, ProdDesc, img} = i; /* De-structuring */
+        let search = basket.find((x)=>x.id === id) || [];
         return  `
         <div id = product-id-${id} class="Headphones">    
-        <img width = "300" src= ${img} alt="">
-        <div class="productdeets">
-            <h2>${ProductName}</h2>
-            <p>${ProdDesc}</p>
-            <div class="price-amt">
-                <h2>$${Price}</h2>
-                <div class="button">
-                    <i onclick="decrement(${id})" class="bi bi-plus-lg"></i>
-                    <div id=${id} class="Quantity">0</div>
-                    <i onclick="increment(${id})" class="bi bi-dash-lg"></i>
+            <img width = "300" src= ${img} alt="">
+            <div class="productdeets">
+                <h2>${ProductName}</h2>
+                <p>${ProdDesc}</p>
+                <div class="price-amt">
+                    <h2>$${Price}</h2>
+                    <div class="button">
+                        <i onclick="decrement(${id})" class="bi bi-plus-lg"></i>
+                        <div id=${id} class="Quantity">
+                        ${search.item === undefined0</div>
+                        <i onclick="increment(${id})" class="bi bi-dash-lg"></i>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>`;
-    }).join(""));
-};
+        `;
+        })
+        .join(""));
+    };
 
 printproducts();
 
