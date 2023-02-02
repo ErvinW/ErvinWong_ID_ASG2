@@ -35,72 +35,37 @@ let productdata = [
         img: "Images/XM5.jpg"
     }]
 
-
-
-let printproducts =()=>{
-    return (products.innerHTML = productdata.map((i)=>{
-        let {id, ProductName, Price, ProdDesc, img} = i; /* De-structuring */
-        let search = basket.find((x)=>x.id === id) || [];
-        return  `
-        <div id = product-id-${id} class="Headphones">    
-            <img width = "300" src= ${img} alt="">
-            <div class="productdeets">
-                <h2>${ProductName}</h2>
-                <p>${ProdDesc}</p>
-                <div class="price-amt">
-                    <h2>$${Price}</h2>
-                    <div class="button">
-                        <i onclick="decrement(${id})" class="bi bi-plus-lg"></i>
-                        <div id=${id} class="Quantity">
-                        ${search.item === undefined0</div>
-                        <i onclick="increment(${id})" class="bi bi-dash-lg"></i>
-                    </div>
+    for (let i = 0; i<productdata.length; i++){
+        let Root = document.querySelector("#products")
+        let html = document.createElement("div")
+        html.setAttribute("id","data"+productdata[i].id)
+        html.classList.add("Headphones")
+        html.innerHTML = `
+        <img width = "300" src= ${productdata[i].img} alt=""></img>
+        <div class="productdeets">
+            <h2>${productdata[i].ProductName}</h2>
+            <p>${productdata[i].ProdDesc}</p>
+            <div class="price-amt">
+                <h2>$${productdata[i].Price}</h2>
+                <div class="button">
+                    <i id = "button${productdata[i].id}" class="bi bi-plus-lg"></i>
+                    <div id=${productdata[i].id} class="Quantity">0</div>
+                    <i id = "button2${productdata[i].id}" class="bi bi-dash-lg"></i>
                 </div>
             </div>
         </div>
-        `;
-        })
-        .join(""));
-    };
-
-printproducts();
-
-let increment = (id) =>{
-    let selectedItem = id;
-    let search = basket.find((x)=> x.id === selectedItem.id);
-
-    if(search === undefined){
-        basket.push({
-            id: selectedItem.id,
-            item: 1,
-        });
+        `
+        
+        Root.appendChild(html)
+        document.getElementById("button" + productdata[i].id).addEventListener("click", function(){console.log(productdata[i].id)})
+        document.getElementById("button2" + productdata[i].id).addEventListener("click", function(){console.log(productdata[i].id)})
     }
-    else{
-        search.id += 1;
-    }
+   
 
-    //console.log(basket);
-    update(selectedItem.id);
-};
 
-let decrement = (id) => {
-    let selectedItem = id;
-    let search = basket.find((x)=> x.id === selectedItem.id);
 
-    if(search.item === 0)return;
 
-    else{
-        search.id -= 1;
-    }
 
-    //console.log(basket);
-    update();
-};
 
-let update = (id) => {
-    let search = basket.find((x)=>x.id === id);
-    console.log(search);
-    document.getElementById(id).innerHTML = search.item;
-};
 
 
