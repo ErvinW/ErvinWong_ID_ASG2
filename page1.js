@@ -30,29 +30,37 @@ let productdata = [
         img: "Images/XM5.jpg"
     }]
 
-
-
-let printproducts =()=>{
-    return (products.innerHTML = productdata.map((i)=>{
-        let {id, ProductName, Price, ProdDesc, img} = i; /* De-structuring */
-        return  `<div id = product-id-${id} class="Headphones">    
-        <img width = "300" src= ${img} alt="">
+    for (let i = 0; i<productdata.length; i++){
+        let Root = document.querySelector("#products")
+        let html = document.createElement("div")
+        html.setAttribute("id","data"+productdata[i].id)
+        html.classList.add("Headphones")
+        html.innerHTML = `
+        <img width = "300" src= ${productdata[i].img} alt=""></img>
         <div class="productdeets">
-            <h2>${ProductName}</h2>
-            <p>${ProdDesc}</p>
+            <h2>${productdata[i].ProductName}</h2>
+            <p>${productdata[i].ProdDesc}</p>
             <div class="price-amt">
-                <h2>$${Price}</h2>
+                <h2>$${productdata[i].Price}</h2>
                 <div class="button">
-                    <i class="bi bi-plus-lg"></i>
-                    <div id=${id} class="Quantity">0</div>
-                    <i class="bi bi-dash-lg"></i>
+                    <i id = "button${productdata[i].id}" class="bi bi-plus-lg"></i>
+                    <div id=${productdata[i].id} class="Quantity">0</div>
+                    <i id = "button2${productdata[i].id}" class="bi bi-dash-lg"></i>
                 </div>
             </div>
         </div>
-    </div>`;
-    }).join(""));
-};
+        `
+        
+        Root.appendChild(html)
+        document.getElementById("button" + productdata[i].id).addEventListener("click", function(){console.log(productdata[i].id)})
+        document.getElementById("button2" + productdata[i].id).addEventListener("click", function(){console.log(productdata[i].id)})
+    }
+   
 
-printproducts();
+
+
+
+
+
 
 
