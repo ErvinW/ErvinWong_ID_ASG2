@@ -11,28 +11,30 @@ let productdata = [
         ProductName: "Sony WH-1000xm5",
         Price: 499.90,
         ProdDesc: "Product desc of the XM5s",
-        img: "Images/XM5.jpg"
+        img: "Images/XM5.jpg",
     },
     {
         id: "Item-2",
         ProductName: "Sennheiser Momentum 4",
         Price: 499.00,
         ProdDesc: "Product desc of the Sennheisers",
-        img: "Images/SennM4.jpg"
+        img: "Images/SennM4.jpg",
+
     },
     {   
         id: "Item-3",
         ProductName: "Sony WH-1000xm5",
         Price: 499.90,
         ProdDesc: "Product desc of the XM5s",
-        img: "Images/XM5.jpg"
+        img: "Images/XM5.jpg",
     },
     {
         id: "Item-4",
         ProductName: "Sony WH-1000xm5",
         Price: 499.90,
         ProdDesc: "Product desc of the XM5s",
-        img: "Images/XM5.jpg"
+        img: "Images/XM5.jpg",
+        
     }]
 
     for (let i = 0; i<productdata.length; i++){
@@ -70,6 +72,7 @@ let productdata = [
             }
             console.log(basket);
             localStorage.setItem("data", JSON.stringify(basket));})
+            document.querySelector(".Quantity").innerHTML = 
 
 
         document.getElementById("Subtract" + productdata[i].id).addEventListener("click", function(){let selectedItem = productdata[i].id;
