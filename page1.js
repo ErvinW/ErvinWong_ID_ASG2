@@ -8,7 +8,7 @@ let basket = [];
 let productdata = [
     {
         id: "Item-1",
-        ProductName: "Sony WH-1000xm5",
+        ProductName: "Sony WH-1000XM5",
         Price: 499.90,
         ProdDesc: "Product desc of the XM5s",
         img: "Images/XM5.jpg",
@@ -23,17 +23,46 @@ let productdata = [
     },
     {   
         id: "Item-3",
-        ProductName: "Sony WH-1000xm5",
-        Price: 499.90,
-        ProdDesc: "Product desc of the XM5s",
-        img: "Images/XM5.jpg",
+        ProductName: "Sony WH-1000XM4",
+        Price: 399.00,
+        ProdDesc: "Product desc of the XM4s",
+        img: "Images/XM4.jpg",
     },
     {
         id: "Item-4",
-        ProductName: "Sony WH-1000xm5",
-        Price: 499.90,
-        ProdDesc: "Product desc of the XM5s",
-        img: "Images/XM5.jpg",
+        ProductName: "Anker Soundcore Space 45",
+        Price: 209.95,
+        ProdDesc: "Product desc of the 45s",
+        img: "Images/SoundCore45.jpg",
+        
+    }, {
+        id: "Item-5",
+        ProductName: "Moondrop Aria",
+        Price: 112.41,
+        ProdDesc: "Product desc of the Arias",
+        img: "Images/Arias.jpg",
+    },
+    {
+        id: "Item-6",
+        ProductName: "Moondrop Chu",
+        Price: 499.00,
+        ProdDesc: "Product desc of the Chus",
+        img: "Images/Chu.jpg",
+
+    },
+    {   
+        id: "Item-7",
+        ProductName: "7Hz Salnotes Dioko",
+        Price: 149.00,
+        ProdDesc: "Product desc of the Diokos",
+        img: "Images/Dioko.jpg",
+    },
+    {
+        id: "Item-8",
+        ProductName: "Sennheiser Momentum True wireless 3",
+        Price: 322.89,
+        ProdDesc: "Product desc of the SennM3s",
+        img: "Images/SennM3.jpg",
         
     }]
 
