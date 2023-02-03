@@ -20,7 +20,7 @@ let productdata = [
         ProdDesc: "Product desc of the Sennheisers",
         img: "Images/SennM4.jpg"
     },
-    {
+    {   
         id: "Item-3",
         ProductName: "Sony WH-1000xm5",
         Price: 499.90,
@@ -48,24 +48,47 @@ let productdata = [
             <div class="price-amt">
                 <h2>$${productdata[i].Price}</h2>
                 <div class="button">
-                    <i id = "button${productdata[i].id}" class="bi bi-plus-lg"></i>
+                    <i id = "Add${productdata[i].id}" class="bi bi-plus-lg"></i>
                     <div id=${productdata[i].id} class="Quantity">0</div>
-                    <i id = "button2${productdata[i].id}" class="bi bi-dash-lg"></i>
+                    <i id = "Subtract${productdata[i].id}" class="bi bi-dash-lg"></i>
                 </div>
             </div>
         </div>
         `
         
         Root.appendChild(html)
-        document.getElementById("button" + productdata[i].id).addEventListener("click", function(){console.log(productdata[i].id)})
-        document.getElementById("button2" + productdata[i].id).addEventListener("click", function(){console.log(productdata[i].id)})
+        document.getElementById("Add" + productdata[i].id).addEventListener("click", function(){let selectedItem = productdata[i].id;
+            let search = basket.find((x) => x.id === selectedItem.id);
+          
+            if (search === undefined) {
+              basket.push({
+                id: selectedItem.id,
+                item: 1,
+              });
+            } else {
+              search.item += 1;
+            }
+            console.log(basket);
+            localStorage.setItem("data", JSON.stringify(basket));})
+
+
+        document.getElementById("Subtract" + productdata[i].id).addEventListener("click", function(){let selectedItem = productdata[i].id;
+             let search = basket.find((x) => x.id === selectedItem.id);
+
+            if (search === undefined) return;
+            else if (search.item === 0) return;
+            else {
+                search.item -= 1;
+            }
+            basket = basket.filter((x) => x.item !== 0);
+            console.log(basket);
+            localStorage.setItem("data", JSON.stringify(basket));})
+        
+
+
+
+
+
     }
-   
 
-
-
-
-
-
-
-
+        
