@@ -21,6 +21,29 @@ body{
 }
 
 
+.Title{
+    text-decoration: none;
+    color: white;
+}
+
+.Settings{
+    text-decoration: none;
+    color: white;
+    float: right;
+}
+
+.Settings  :visited{
+    text-decoration : none;
+}
+
+
+.left{
+    display: flex;
+    flex-direction: row;
+}
+
+
+
 
 .shoppingCart{
     position: relative;
