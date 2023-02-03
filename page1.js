@@ -22,19 +22,6 @@ let productdata = [
     },
     {
         id: "Item-3",
-<<<<<<< Updated upstream
-        ProductName: "Sony WH-1000xm5",
-        Price: 499.90,
-        ProdDesc: "Product desc of the XM5s",
-        img: "Images/XM5.jpg"
-    },
-    {
-        id: "Item-4",
-        ProductName: "Sony WH-1000xm5",
-        Price: 499.90,
-        ProdDesc: "Product desc of the XM5s",
-        img: "Images/XM5.jpg"
-=======
         ProductName: "Sony WH-1000XM4",
         Price: 399.00,
         ProdDesc: "Product desc of the XM4s",
@@ -76,7 +63,6 @@ let productdata = [
         ProdDesc: "Product desc of the SennM3s",
         img: "Images/SennM3.jpg",
         
->>>>>>> Stashed changes
     }]
 
     for (let i = 0; i<productdata.length; i++){
@@ -113,10 +99,3 @@ let productdata = [
 
 
 
-<<<<<<< Updated upstream
-=======
-
-   
-
-        
->>>>>>> Stashed changes
