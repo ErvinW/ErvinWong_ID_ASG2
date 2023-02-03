@@ -4,12 +4,21 @@
 }
 
 
-.b1, button{
+.b1 button{
+    font-size: 75px;
+    color: red;
+    border-radius: 25px;
+    border-color: red;
+}
+
+
+.b2 button{
     font-size: 75px;
     color: white;
     border-radius: 25px;
     border-color: white;
 }
+
 
 .Box{
     display: grid;
