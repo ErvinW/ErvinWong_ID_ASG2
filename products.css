@@ -130,13 +130,13 @@ img:hover{
 }
 
 @media (max-width: 1000px){
-    .products{
+    #products{
         grid-template-columns: repeat(2, 304px);
     }
 }
 
 @media (max-width: 500px){
-    .products{
+    #products{
         grid-template-columns: repeat(1, 304px);
     }
 }
