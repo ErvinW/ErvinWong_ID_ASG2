@@ -45,7 +45,8 @@ $(document).ready(function(){
 
         for (let i = 0; i < User_list.length; i++){
             if (User_Email == User_list[i].User_Email && User_password == User_list[i].User_password){
-                localStorage.setItem("User", User_list[i]);
+                let jsonuser = JSON.stringify(User_list[i])
+                localStorage.setItem("User", jsonuser);
                 window.location.assign("page1.html"); 
             }
            
