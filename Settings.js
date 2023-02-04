@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
 })
-//Edit later
+
 //From RestDB
 // var settings = {
 //     "async": true,
