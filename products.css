@@ -65,6 +65,10 @@ body{
     padding: 3px;
 }
 
+.Welcome{
+    margin-bottom: 50px;
+    text-align: center;
+}
 /* Styling for products */
 
 #products{
