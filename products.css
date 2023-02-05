@@ -42,9 +42,18 @@ body{
     flex-direction: row;
 }
 
+/* Styling for Gear Icon */
+.bi-gear{
+    font-size: 30px;
+    margin-right: 50px;
+}
+/* */
 
-
-
+.right{
+    display: flex;
+    flex: row;
+    justify-content: space-evenly;
+}
 .shoppingCart{
     position: relative;
     background-color: #04AA6D;
