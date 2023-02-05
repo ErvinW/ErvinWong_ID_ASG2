@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  var obj = localStorage.getItem("User");
+  var obj = JSON.parse(localStorage.getItem("User"));
 
 
 
@@ -16,7 +16,7 @@ $(document).ready(function(){
     var settings = {
       "async": true,
       "crossDomain": true,
-      "url": "https://idasg2-d416.restdb.io/rest/useraccount/"+obj,
+      "url": `https://idasg2-d416.restdb.io/rest/useraccount/${obj.id}`,
       "method": "DELETE",
       "headers": {
         "content-type": "application/json",

@@ -3,11 +3,11 @@ $(document).ready(function(){
     const User_list = [];
 
 
-    function User(User_Email, User_password, Username){
+    function User(User_Email, User_password, Username, id){
         this.User_Email = User_Email,
-        this.User_password = User_password
-        this.Username = Username
-
+        this.User_password = User_password,
+        this.Username = Username,
+        this.id = id
         
     }
 
@@ -30,8 +30,9 @@ $(document).ready(function(){
       $.ajax(settings).done(function (response) {
         //console.log(response);
         for (let i = 0; i < response.length; i++){
-            User_list.push( new User(response[i].User_Email, response[i].User_password, response[i].Username));
+            User_list.push( new User(response[i].User_Email, response[i].User_password, response[i].Username, response[i]._id));
             console.log(User_list[i])
+       
         }
       });
 
