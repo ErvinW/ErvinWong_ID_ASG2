@@ -26,8 +26,9 @@ $(document).ready(function(){
     }
 
     $.ajax(settings).done(function (response) {
-      console.log("hh");
+      console.log("Delete successful");
       console.log(response);
+      window.location.assign("Index.html");
     });
   
   
