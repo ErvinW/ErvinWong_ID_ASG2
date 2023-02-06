@@ -84,6 +84,10 @@ let productdata = [
                     <i id = "Subtract${productdata[i].id}" class="bi bi-dash-lg"></i>
                 </div>
             </div>
+<<<<<<< Updated upstream
+=======
+            <button class="cartadd">Add to Cart</button>
+>>>>>>> Stashed changes
         </div>
         `
         
