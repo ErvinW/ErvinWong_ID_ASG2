@@ -92,7 +92,7 @@ body{
 }
 
 .Headphones{
-    border: 2px solid black;
+    border: 2px;
     border-radius: 4px;
 }
 
@@ -106,7 +106,7 @@ body{
 .price-amt{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content:center;
     align-items: center;
 }
 
@@ -130,4 +130,33 @@ body{
 
 .bi-dash-lg{
     color: red;
+}
+
+.cartadd{
+    width:100%;
+    color: white;
+    background-color: #00704A;
+    margin-top: 3%;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-align: center;
+    border: none;
+}
+
+.cartadd:hover{
+    transform: scale(1.1);
+    background-color: #4C9F87;
+    cursor: pointer;
+}
+
+
+#products{
+    display: grid;
+    padding-right: 50px;
+    padding-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 50px;
+    justify-content: center;
 }
