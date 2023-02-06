@@ -28,3 +28,13 @@
     margin-left: 15px;
     margin-top: 17%;
 }
+
+.Cfm{
+    display: flex;
+    justify-content: space-around;
+}
+
+.b1{
+    display: flex;
+    flex-direction: column;
+}
