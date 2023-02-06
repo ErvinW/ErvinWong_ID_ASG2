@@ -107,24 +107,6 @@ img:hover{
 }
 
 .productdeets{
-    font-size: 1.3rem;
-    font-weight:bold;
-    position:relative;
-    bottom:0px; 
-}
-
-.price-amt{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    gap: 10px;
-}
-
-.price-amt{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
     font-size: 0.8rem;
     font-weight:bold;
     position:relative;
