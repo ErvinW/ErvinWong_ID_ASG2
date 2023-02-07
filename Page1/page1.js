@@ -74,12 +74,12 @@ let productdata = [
         html.innerHTML = `
         <img width = 300px height = 185px src= ${productdata[i].img} alt=""></img>
         <div class="productdeets">
-            <h2>${productdata[i].ProductName}</h2>
+            <h2 id="ProductName">${productdata[i].ProductName}</h2>
             <p>${productdata[i].ProdDesc}</p>
             <div class="price-amt">
-                <h2>$${productdata[i].Price}</h2>
+                <h2 id="price-amt">$${productdata[i].Price}</h2>
             </div>
-            <button id = "cart" class="cartadd">Add to Cart</button>
+            <button id = "cart${productdata[i].id}" class="cartadd">Add to Cart</button>
         </div>
         `
         
@@ -112,12 +112,20 @@ let productdata = [
         //     console.log(basket);
         //     localStorage.setItem("data", JSON.stringify(basket));})
         
-
-
+        $("#cart" + productdata[i].id).on("click", function(c){
+            c.preventDefault();
+            let itemAdded = [productdata[i].ProductName, productdata[i].Price]
+            console.log(itemAdded);
+            basket.push(itemAdded);
+    
+        })
 
 
 
     }
+
+   
+
 
   var obj = JSON.parse(localStorage.getItem("User"));
   document.getElementById("Welc").innerHTML = "Welcome! " + obj.Username;
