@@ -72,7 +72,7 @@ let productdata = [
         html.setAttribute("id","data"+productdata[i].id)
         html.classList.add("Headphones")
         html.innerHTML = `
-        <img width = 300px src= ${productdata[i].img} alt=""></img>
+        <img width = 300px height = 200px src= ${productdata[i].img} alt=""></img>
         <div class="productdeets">
             <h2>${productdata[i].ProductName}</h2>
             <p>${productdata[i].ProdDesc}</p>

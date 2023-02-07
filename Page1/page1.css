@@ -88,12 +88,14 @@ body{
     max-width: 300px;
     margin: auto;
     text-align: center;
-    flex: 25%
+    flex: 25%;
+    display: inline-block;
 }
 
 img{
     border-radius: 10px;
     position:relative;
+    
   }
 
 img:hover{
@@ -107,16 +109,16 @@ img:hover{
 }
 
 .productdeets{
-    font-size: 0.8rem;
     font-weight:bold;
     position:relative;
     bottom:0px; 
+    font-size: 10.3px;
 }
 
 .price-amt{
     margin-top: 3%;
     color:#00704A;
-    font-size: 1.15rem;
+    font-size: 1rem;
     font-weight: bold;
     padding-bottom: 30px;
 }
