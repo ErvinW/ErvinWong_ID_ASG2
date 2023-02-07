@@ -42,18 +42,9 @@ body{
     flex-direction: row;
 }
 
-/* Styling for Gear Icon */
-.bi-gear{
-    font-size: 30px;
-    margin-right: 50px;
-}
-/* */
 
-.right{
-    display: flex;
-    flex: row;
-    justify-content: space-evenly;
-}
+
+
 .shoppingCart{
     position: relative;
     background-color: #04AA6D;
@@ -78,6 +69,7 @@ body{
     margin-bottom: 50px;
     text-align: center;
 }
+
 /* Styling for products */
 
 #products{
@@ -89,18 +81,21 @@ body{
     grid-template-columns: repeat(4,1fr);
     grid-gap: 50px;
     justify-content: center;
+    max-height: 10px;
 }
 
 .product{
     max-width: 300px;
     margin: auto;
     text-align: center;
-    flex: 25%
+    flex: 25%;
+    display: inline-block;
 }
 
 img{
     border-radius: 10px;
     position:relative;
+    
   }
 
 img:hover{
@@ -108,21 +103,27 @@ img:hover{
     transition: all 0.3s ease-in-out;
 }
 
-.productdesc{
-    font-size: 1.3rem;
+.Headphones{
+    border: 2px;
+    border-radius: 4px;
+}
+
+.productdeets{
     font-weight:bold;
     position:relative;
     bottom:0px; 
+    font-size: 10.3px;
 }
 
-.price{
+.price-amt{
     margin-top: 3%;
     color:#00704A;
-    font-size: 1.15rem;
+    font-size: 1rem;
     font-weight: bold;
+    padding-bottom: 30px;
 }
 
-.price h2{
+.price-amt h2{
     margin-left: 10px;
 }
 
@@ -144,7 +145,7 @@ img:hover{
 }
 
 @media (max-width: 1000px){
-    #products{
+    #roducts{
         grid-template-columns: repeat(2, 304px);
     }
 }
@@ -153,4 +154,15 @@ img:hover{
     #products{
         grid-template-columns: repeat(1, 304px);
     }
+}
+
+.bi-gear{
+    font-size: 30px;
+    margin-right: 50px;
+}
+
+.right{
+    display: flex;
+    flex: row;
+    justify-content: space-evenly;
 }

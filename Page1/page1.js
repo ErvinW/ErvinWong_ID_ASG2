@@ -84,33 +84,6 @@ let productdata = [
         `
         
         Root.appendChild(html)
-        // document.getElementById("Add" + productdata[i].id).addEventListener("click", function(){let selectedItem = productdata[i].id;
-        //     let search = basket.find((x) => x.id === selectedItem.id);
-          
-        //     if (search === undefined) {
-        //       basket.push({
-        //         id: selectedItem.id,
-        //         item: 1,
-        //       });
-        //     } else {
-        //       search.item += 1;
-        //     }
-        //     console.log(basket);
-        //     localStorage.setItem("data", JSON.stringify(basket));})
-        //     document.querySelector(".Quantity").innerHTML = 
-
-
-        // document.getElementById("Subtract" + productdata[i].id).addEventListener("click", function(){let selectedItem = productdata[i].id;
-        //      let search = basket.find((x) => x.id === selectedItem.id);
-
-        //     if (search === undefined) return;
-        //     else if (search.item === 0) return;
-        //     else {
-        //         search.item -= 1;
-        //     }
-        //     basket = basket.filter((x) => x.item !== 0);
-        //     console.log(basket);
-        //     localStorage.setItem("data", JSON.stringify(basket));})
         
         $("#cart" + productdata[i].id).on("click", function(c){
             c.preventDefault();
@@ -130,8 +103,3 @@ let productdata = [
   var obj = JSON.parse(localStorage.getItem("User"));
   document.getElementById("Welc").innerHTML = "Welcome! " + obj.Username;
 
-//   <div class="button">
-//   <i id = "Add${productdata[i].id}" class="bi bi-plus-lg"></i>
-//   <div id=${productdata[i].id} class="Quantity">0</div>
-//   <i id = "Subtract${productdata[i].id}" class="bi bi-dash-lg"></i>
-// </div>
