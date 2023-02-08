@@ -24,4 +24,7 @@ Dioko.jpg : https://www.audiophileon.com/news/7hz-salnotes-dioko-review
 
 SennM3 : https://www.rtings.com/headphones/reviews/sennheiser/momentum-true-wireless-3
 
+Beyer.jpg : https://www.rtings.com/headphones/reviews/beyerdynamic/dt-990-pro
+
+Hammerhead.jpg : https://www.rtings.com/headphones/reviews/razer/hammerhead-true-wireless-2021
 ..

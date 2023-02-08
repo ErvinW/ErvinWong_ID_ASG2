@@ -145,7 +145,7 @@ img:hover{
 }
 
 @media (max-width: 1000px){
-    #roducts{
+    #products{
         grid-template-columns: repeat(2, 304px);
     }
 }
