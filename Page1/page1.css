@@ -20,6 +20,17 @@ body{
     margin-bottom: 90px;
 }
 
+.bi-bag-fill :hover{
+    transform : scale(1.1);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.bi-gear :hover{
+    transform : scale(1.1);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
 
 .Title{
     text-decoration: none;
@@ -36,14 +47,16 @@ body{
     text-decoration : none;
 }
 
+.Settings :hover{
+    transform : scale(1.1);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
 
 .left{
     display: flex;
     flex-direction: row;
 }
-
-
-
 
 .shoppingCart{
     position: relative;
@@ -52,6 +65,12 @@ body{
     padding: 10px;
     font-size: 30px;
     border-radius: 6px;
+}
+
+.shoppingCart :hover{
+    transform : scale(1.1);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
 }
 
 .cartAmt{
@@ -112,7 +131,7 @@ img:hover{
     font-weight:bold;
     position:relative;
     bottom:0px; 
-    font-size: 10.3px;
+    font-size: 12px;
 }
 
 .price-amt{
