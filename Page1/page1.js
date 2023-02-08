@@ -100,6 +100,7 @@ let productdata = [
 
     $("#gotocart").on("click", function(gocart){
         gocart.preventDefault();
+        localStorage.setItem("Cart", basket);
         window.location.assign("/Shoppingcart/shoppingcart.html");
 
         
