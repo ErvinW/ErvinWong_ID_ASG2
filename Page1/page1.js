@@ -4,7 +4,6 @@ let shopitemdata = [
     ];
 
 let basket = [];
-
 let productdata = [
     {
         id: "Item-1",
@@ -90,12 +89,21 @@ let productdata = [
             let itemAdded = [productdata[i].ProductName, productdata[i].Price]
             console.log(itemAdded);
             basket.push(itemAdded);
+            document.getElementById("cartAmt").innerHTML = basket.length;
     
         })
 
 
 
     }
+
+
+    $("#gotocart").on("click", function(gocart){
+        gocart.preventDefault();
+        window.location.assign("/Shoppingcart/shoppingcart.html");
+
+        
+    })
 
    
 
