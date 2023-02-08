@@ -4,7 +4,6 @@ let shopitemdata = [
     ];
 
 let basket = [];
-
 let productdata = [
     {
         id: "Item-1",
@@ -117,6 +116,7 @@ let productdata = [
             let itemAdded = [productdata[i].ProductName, productdata[i].Price]
             console.log(itemAdded);
             basket.push(itemAdded);
+            document.getElementById("cartAmt").innerHTML = basket.length;
     
         })
 
@@ -124,14 +124,17 @@ let productdata = [
 
     }
 
+
+    $("#gotocart").on("click", function(gocart){
+        gocart.preventDefault();
+        window.location.assign("/Shoppingcart/shoppingcart.html");
+
+        
+    })
+
    
 
 
   var obj = JSON.parse(localStorage.getItem("User"));
   document.getElementById("Welc").innerHTML = "Welcome! " + obj.Username;
 
-//   <div class="button">
-//   <i id = "Add${productdata[i].id}" class="bi bi-plus-lg"></i>
-//   <div id=${productdata[i].id} class="Quantity">0</div>
-//   <i id = "Subtract${productdata[i].id}" class="bi bi-dash-lg"></i>
-// </div>
