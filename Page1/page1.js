@@ -63,7 +63,22 @@ let productdata = [
         ProdDesc: "Product desc of the SennM3s",
         img: "/Images/SennM3.jpg",
         
-    }]
+    },
+    {
+        id: "Item-9",
+        ProductName: "Beyerdyanmic DT990 Pro",
+        Price: 228.00,
+        ProdDesc: "Product desc of the BD 990s",
+        img: "/Images/Beyer.jpg"
+    },
+    {
+        id: "Item-10",
+        ProductName: "Razer Hammerhead 2021 TWS",
+        Price: 169.90,
+        ProdDesc: "Prodcut desc of the hammerhead 2021",
+        img: "/Images/Hammerhead.jpg"
+    }
+    ]
 
     for (let i = 0; i<productdata.length; i++){
         let Root = document.querySelector("#products")
