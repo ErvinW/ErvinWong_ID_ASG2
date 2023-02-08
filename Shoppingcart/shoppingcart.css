@@ -1,0 +1,113 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* Style for navigation bar */
+.navigation{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #333;
+    color: white;
+    padding: 20px 60px;
+    margin-bottom: 90px;
+}
+
+.bi-bag-fill :hover{
+    transform : scale(1.1);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.bi-gear :hover{
+    transform : scale(1.1);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.Title{
+    text-decoration: none;
+    color: white;
+}
+
+.Settings{
+    text-decoration: none;
+    color: white;
+    float: right;
+}
+
+.Settings  :visited{
+    text-decoration : none;
+}
+
+.Settings :hover{
+    transform : scale(1.1);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.bi-gear{
+    font-size: 30px;
+    margin-right: 50px;
+}
+
+.right{
+    display: flex;
+    flex: row;
+    justify-content: space-evenly;
+}
+
+.left{
+    display: flex;
+    flex-direction: row;
+}
+
+.shoppingCart{
+    position: relative;
+    background-color: #04AA6D;
+    color: #fff;
+    padding: 10px;
+    font-size: 30px;
+    border-radius: 6px;
+}
+
+.shoppingCart :hover{
+    transform : scale(1.1);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.cartAmt{
+    font-size: 20px;
+    background-color: red;
+    border-radius: 4px;
+    color: white;
+    position: absolute;
+    top: -15px;
+    right: -12px;
+    padding: 3px;
+}
+
+.Welcome{
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+@media (max-width: 1000px){
+    #products{
+        grid-template-columns: repeat(2, 304px);
+    }
+}
+
+@media (max-width: 500px){
+    #products{
+        grid-template-columns: repeat(1, 304px);
+    }
+}
