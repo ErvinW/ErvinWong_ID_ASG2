@@ -1,22 +1,49 @@
-
 let cart = JSON.parse(localStorage.getItem("Cart"))
 console.log(cart)
-
-
+let totalprice = 0
+let user = localStorage.getItem("User")
+console.log(user)
 for (let i = 0; i<cart.length; i++){
+    totalprice += cart[i].Price
     let Root = document.querySelector("#List")
     let html = document.createElement("div")
     html.setAttribute("id", i)
     html.classList.add("ToCheckOut")
     html.innerHTML = `
-        <div class="productdeets">
-            <h2 id="ProductName">${cart[i].ProductName}</h2>
-            <div class="price-amt">
-                <h2 id="price-amt">$${cart[i].Price}</h2>
-        `
+    <div id="${cart[i].ProductName}" class="item">
+      <div class="cart-description" src="">
+      <span class="cart-title">${cart[i].ProductName}</span>
+      </div>
+      <span class="cart-price">${cart[i].Price}</span>
+      <div class="lastpart">
+      <button id="remove" class="remove-btn" type="button">REMOVE</button>
+      </div>
+    </div>
+    `
+
+    $("#remove").on("click",function(x){
+      x.preventDefault()
+      totalprice -= cart[i].Price
+      document.getElementById(cart[i].ProductName).innerHTML = ""
+      document.getElementById("total-price").innerHTML = totalprice
+    })
     
     Root.appendChild(html)
+
 }
+
+
+
+document.getElementById("total-price").innerHTML = totalprice
+// var removeCartItemButtons = document.querySelectorAll(".remove-btn")
+// for (var i = 0; i<removeCartItemButtons.length; i++){
+//     var button = removeCartItemButtons[i]
+//     button.addEventListener('click',function(event){
+//         var buttonClicked = event.target
+//         buttonClicked.parentElement.parentElement.parentElement.remove()
+//     }) 
+// }
+
 
 
 
