@@ -113,44 +113,13 @@ let productdata = [
     }
     ]
 
-    for (let i = 0; i<12; i++){
-        let Root = document.querySelector("#products")
-        let html = document.createElement("div")
-        html.setAttribute("id","data"+productdata[i].id)
-        html.classList.add("Headphones")
-        html.innerHTML = `
-        <img width = 300px height = 185px src= ${productdata[i].img} alt=""></img>
-        <div class="productdeets">
-            <h2 id="ProductName">${productdata[i].ProductName}</h2>
-            <div class="price-amt">
-                <h2 id="price-amt">$${productdata[i].Price}</h2>
-            </div>
-            <button id = "cart${productdata[i].id}" class="cartadd">Add to Cart</button>
-        </div>
-        `
-        
-        Root.appendChild(html)
-        
-        $("#cart" + productdata[i].id).on("click", function(c){
-            c.preventDefault();
-            let itemAdded = new AddedtoCart(productdata[i].ProductName, productdata[i].Price)
-            console.log(itemAdded);
-            basket.push(JSON.stringify(itemAdded));
-            document.getElementById("cartAmt").innerHTML = basket.length;
-    
-        })
+   
 
-
-
-    }
-
-
-  
 
 
     $("#gotocart").on("click", function(gocart){
         gocart.preventDefault();
-        localStorage.setItem("Cart", basket);
+        localStorage.setItem("Cart", JSON.stringify(basket));
         window.location.assign("/Shoppingcart/shoppingcart.html");
 
         
@@ -180,7 +149,7 @@ let productdata = [
             c.preventDefault();
             let itemAdded = new AddedtoCart(productdata[i].ProductName, productdata[i].Price)
             console.log(itemAdded);
-            basket.push(JSON.stringify(itemAdded));
+            basket.push(itemAdded);
             document.getElementById("cartAmt").innerHTML = basket.length;
     
         })
@@ -215,7 +184,7 @@ let productdata = [
             c.preventDefault();
             let itemAdded = new AddedtoCart(productdata[i].ProductName, productdata[i].Price)
             console.log(itemAdded);
-            basket.push(JSON.stringify(itemAdded));
+            basket.push(itemAdded);
             document.getElementById("cartAmt").innerHTML = basket.length;
     
         })
