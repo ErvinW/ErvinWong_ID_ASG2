@@ -86,10 +86,48 @@ let productdata = [
         ProductName: "Bose Quiet Comfort 35 Gaming",
         Price: 350.00,
         img: "/Images/QC35.jpg"
+    },
+    {
+        id: "Item-13",
+        ProductName: "G502 HERO",
+        Price: 68.00,
+        img: "/Images/G502.jpg"
     }
     ]
 
-    for (let i = 0; i<productdata.length; i++){
+    for (let i = 0; i<12; i++){
+        let Root = document.querySelector("#products")
+        let html = document.createElement("div")
+        html.setAttribute("id","data"+productdata[i].id)
+        html.classList.add("Headphones")
+        html.innerHTML = `
+        <img width = 300px height = 185px src= ${productdata[i].img} alt=""></img>
+        <div class="productdeets">
+            <h2 id="ProductName">${productdata[i].ProductName}</h2>
+            <div class="price-amt">
+                <h2 id="price-amt">$${productdata[i].Price}</h2>
+            </div>
+            <button id = "cart${productdata[i].id}" class="cartadd">Add to Cart</button>
+        </div>
+        `
+        
+        Root.appendChild(html)
+        
+        $("#cart" + productdata[i].id).on("click", function(c){
+            c.preventDefault();
+            let itemAdded = new AddedtoCart(productdata[i].ProductName, productdata[i].Price)
+            console.log(itemAdded);
+            basket.push(JSON.stringify(itemAdded));
+            document.getElementById("cartAmt").innerHTML = basket.length;
+    
+        })
+
+
+
+    }
+
+
+    for (let i = 12; i<20; i++){
         let Root = document.querySelector("#products")
         let html = document.createElement("div")
         html.setAttribute("id","data"+productdata[i].id)
