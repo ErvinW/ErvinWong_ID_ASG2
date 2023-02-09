@@ -2,7 +2,7 @@
 # IsaacKhoo_ID_ASG2
 
 
-Inspiration from: Adidas and Challenger's website.
+Inspiration from: Adidas and Challenger's website
 
 
 
