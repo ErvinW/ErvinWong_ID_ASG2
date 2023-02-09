@@ -3,6 +3,13 @@ let products = document.getElementById("products")
 let shopitemdata = [
     ];
 
+
+    function AddedtoCart(ProductName, Price){
+        this.ProductName = ProductName,
+        this.Price = Price
+        
+    }
+
 let basket = [];
 let productdata = [
     {
@@ -90,9 +97,9 @@ let productdata = [
         
         $("#cart" + productdata[i].id).on("click", function(c){
             c.preventDefault();
-            let itemAdded = [productdata[i].ProductName, productdata[i].Price]
+            let itemAdded = new AddedtoCart(productdata[i].ProductName, productdata[i].Price)
             console.log(itemAdded);
-            basket.push(itemAdded);
+            basket.push(JSON.stringify(itemAdded));
             document.getElementById("cartAmt").innerHTML = basket.length;
     
         })
