@@ -46,7 +46,7 @@ let productdata = [
     {
         id: "Item-6",
         ProductName: "Moondrop Chu",
-        Price: 499.00,
+        Price: 29.00,
         img: "/Images/Chu.jpg",
 
     },
@@ -58,7 +58,7 @@ let productdata = [
     },
     {
         id: "Item-8",
-        ProductName: "Sennheiser Momentum True Wireless 3",
+        ProductName: "Sennheiser Momentum TWS 3",
         Price: 322.89,
         img: "/Images/SennM3.jpg",
         
@@ -74,6 +74,18 @@ let productdata = [
         ProductName: "Razer Hammerhead 2021 TWS",
         Price: 169.90,
         img: "/Images/Hammerhead.jpg"
+    },
+    {
+        id: "Item-11",
+        ProductName: "SteelSeries TUSQ",
+        Price: 75.00,
+        img: "/Images/SSTusq.jpg"
+    },
+    {
+        id: "Item-12",
+        ProductName: "Bose Quiet Comfort 35 Gaming",
+        Price: 350.00,
+        img: "/Images/QC35.jpg"
     }
     ]
 

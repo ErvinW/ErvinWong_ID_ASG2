@@ -27,4 +27,8 @@ SennM3 : https://www.rtings.com/headphones/reviews/sennheiser/momentum-true-wire
 Beyer.jpg : https://www.rtings.com/headphones/reviews/beyerdynamic/dt-990-pro
 
 Hammerhead.jpg : https://www.rtings.com/headphones/reviews/razer/hammerhead-true-wireless-2021
+
+SSTusq.jpg : https://www.rtings.com/headphones/reviews/steelseries/tusq
+
+QC35.jpg : https://www.rtings.com/headphones/reviews/bose/quietcomfort-35-ii-gaming-headset
 ..
