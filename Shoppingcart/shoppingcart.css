@@ -99,29 +99,6 @@ body{
     justify-content: space-evenly;
 }
 
-<<<<<<< Updated upstream
-
-
-.Mb{
-    position: relative;
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    font-size: 30px;
-    border-radius: 6px;
-    border-color: #fff;
-}
-
-.Mice :hover{
-    transform : scale(1.1);
-    transition: all 0.3s ease-in-out;
-    cursor: pointer;
-}
-
-#Hp{
-    margin-right: 60px;
-}
-=======
 /* Styling for products */
 .item{
     display: flex;
@@ -162,6 +139,7 @@ color:red;
 text-align: center;
 font-size: 3rem;
 }   
+
 @media screen and (max-width:820px){
 .cart-title{
     font-size:1rem;
@@ -172,4 +150,3 @@ font-size: 3rem;
 }
 
 
->>>>>>> Stashed changes
