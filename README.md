@@ -33,3 +33,7 @@ SSTusq.jpg : https://www.rtings.com/headphones/reviews/steelseries/tusq
 QC35.jpg : https://www.rtings.com/headphones/reviews/bose/quietcomfort-35-ii-gaming-headset
 ..
 G502.jpg : https://www.rtings.com/mouse/reviews/logitech/g502-hero
+
+GPro.jpg : https://www.rtings.com/mouse/reviews/logitech/g-pro-x-superlight
+
+Lift.jpg : https://www.rtings.com/mouse/reviews/logitech/lift

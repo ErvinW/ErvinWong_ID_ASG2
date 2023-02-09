@@ -92,6 +92,24 @@ let productdata = [
         ProductName: "G502 HERO",
         Price: 68.00,
         img: "/Images/G502.jpg"
+    },
+    {
+        id: "Item-14",
+        ProductName: "G305",
+        Price: 35.00,
+        img: "/Images/G305.jpg"
+    },
+    {
+        id: "Item-15",
+        ProductName: "Gpro Superlight",
+        Price: 149.90,
+        img: "/Images/GPro.jpg"
+    },
+    {
+        id: "Item-16",
+        ProductName: "Logitech Lift",
+        Price: 85.00,
+        img: "/Images/Lift.jpg"
     }
     ]
 
@@ -127,11 +145,11 @@ let productdata = [
     }
 
 
-    for (let i = 12; i<20; i++){
+    for (let i = 12; i<productdata.length; i++){
         let Root = document.querySelector("#products")
         let html = document.createElement("div")
         html.setAttribute("id","data"+productdata[i].id)
-        html.classList.add("Headphones")
+        html.classList.add("Mice")
         html.innerHTML = `
         <img width = 300px height = 185px src= ${productdata[i].img} alt=""></img>
         <div class="productdeets">

@@ -103,6 +103,20 @@ body{
     max-height: 10px;
 }
 
+
+
+#Mice{
+    display: grid;
+    padding-right: 50px;
+    padding-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 50px;
+    justify-content: center;
+    max-height: 10px;
+}
+
 .product{
     max-width: 300px;
     margin: auto;
