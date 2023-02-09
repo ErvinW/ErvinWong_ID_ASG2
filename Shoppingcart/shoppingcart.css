@@ -194,33 +194,14 @@ img:hover{
     margin-right: 50px;
 }
 
-
-
-
 .right{
     display: flex;
     flex: row;
     justify-content: space-evenly;
 }
 
-
-
-.Mb{
-    position: relative;
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    font-size: 30px;
-    border-radius: 6px;
-    border-color: #fff;
-}
-
 .Mice :hover{
     transform : scale(1.1);
     transition: all 0.3s ease-in-out;
     cursor: pointer;
-}
-
-#Hp{
-    margin-right: 60px;
 }
