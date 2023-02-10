@@ -4,7 +4,8 @@ let shopitemdata = [
     ];
 
 
-    function AddedtoCart(ProductName, Price){
+    function AddedtoCart(id, ProductName, Price){
+        this.id = id,
         this.ProductName = ProductName,
         this.Price = Price
         
@@ -147,7 +148,7 @@ let productdata = [
         
         $("#cart" + productdata[i].id).on("click", function(c){
             c.preventDefault();
-            let itemAdded = new AddedtoCart(productdata[i].ProductName, productdata[i].Price)
+            let itemAdded = new AddedtoCart(productdata[i].id, productdata[i].ProductName, productdata[i].Price)
             console.log(itemAdded);
             basket.push(itemAdded);
             document.getElementById("cartAmt").innerHTML = basket.length;
@@ -182,7 +183,7 @@ let productdata = [
         
         $("#cart" + productdata[i].id).on("click", function(c){
             c.preventDefault();
-            let itemAdded = new AddedtoCart(productdata[i].ProductName, productdata[i].Price)
+            let itemAdded = new AddedtoCart(productdata[i].id, productdata[i].ProductName, productdata[i].Price)
             console.log(itemAdded);
             basket.push(itemAdded);
             document.getElementById("cartAmt").innerHTML = basket.length;

@@ -10,25 +10,30 @@ for (let i = 0; i<cart.length; i++){
     html.setAttribute("id", i)
     html.classList.add("ToCheckOut")
     html.innerHTML = `
-    <div id="${cart[i].ProductName}" class="item">
+    <div id="${cart[i].id}" class="item">
       <div class="cart-description" src="">
       <span class="cart-title">${cart[i].ProductName}</span>
       </div>
       <span class="cart-price">${cart[i].Price}</span>
       <div class="lastpart">
-      <button id="remove" class="remove-btn" type="button">REMOVE</button>
+      <button id="${cart[i].id}remove" class="remove-btn" type="button">REMOVE</button>
       </div>
     </div>
     `
+    Root.appendChild(html)
 
-    $("#remove").on("click",function(x){
-      x.preventDefault()
-      totalprice -= cart[i].Price
-      document.getElementById(cart[i].ProductName).innerHTML = ""
-      document.getElementById("total-price").innerHTML = totalprice
+    document.querySelector(`#${cart[i].id}remove`).addEventListener("click", function(){
+    
+        cart.splice(i,1);
+        console.log(cart[i])
+        localStorage.setItem("Cart", JSON.stringify(cart))
+        window.location.reload();
+        
+      
     })
     
-    Root.appendChild(html)
+    
+    
 
 }
 
@@ -60,12 +65,14 @@ $("#submit").on("click", function(e){
 
     let Address = $("#Address").val();
     let CardNo = $("#CardNo").val();
-    let User_Email = localStorage.getItem("User").User_Email;
+    let User_Email = JSON.parse(localStorage.getItem("User")).User_Email;
     let Price = 0;
     for (let i = 0; i<cart.length;i++){
         Price+= cart[i].Price;
     }
     console.log(Price);
+    console.log(User_Email);
+
 
 
 
