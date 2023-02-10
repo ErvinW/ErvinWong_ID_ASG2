@@ -1,6 +1,10 @@
 # ErvinWong_ID_ASG2
 # IsaacKhoo_ID_ASG2
 
+Link to Github: https://github.com/ErvinW/ErvinWong_ID_ASG2.git
+
+
+
 PROJECT NAME: EonTech
 
 EonTech is an E-commerce Website which caters to a wide variety of users. The primary theme for our sales are tech items(e.g. Mouse, Headphones, etc.)
