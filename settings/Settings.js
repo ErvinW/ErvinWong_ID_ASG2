@@ -40,6 +40,13 @@ $(document).ready(function(){
     })
 
 
+    $("#No").on("click", function(no){
+      no.preventDefault();
+      document.getElementById("Cfm").style.visibility = "hidden";
+
+    })
+
+
     
 
 
@@ -47,6 +54,12 @@ $(document).ready(function(){
   
   
   
+  })
+
+
+  $("#Edit").on("click", function(edit){
+    edit.preventDefault();
+
   })
   
 
