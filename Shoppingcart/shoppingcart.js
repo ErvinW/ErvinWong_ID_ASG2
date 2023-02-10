@@ -42,13 +42,13 @@ let total = totalprice.toFixed(2)
 document.getElementById("total-price").innerHTML = total
 
 
-function Order(Address, CardNo, OrderDeets, User_Email){
-    this.Address = Address,
-    this.CardNo = CardNo,
-    this.OrderDeets = OrderDeets,
-    this.User_Email = User_Email
+// function Order(Address, CardNo, OrderDeets, User_Email){
+//     this.Address = Address,
+//     this.CardNo = CardNo,
+//     this.OrderDeets = OrderDeets,
+//     this.User_Email = User_Email
     
-}
+// }
 
 $("#submit").on("click", function(e){
     e.preventDefault();
@@ -93,9 +93,13 @@ $("#submit").on("click", function(e){
      
      $.ajax(settings).done(function (response) {
        console.log(response);
+       window.location.assign("/CheckOutPage/CheckOut.html");
      });
+<<<<<<< Updated upstream
+=======
 
-     window.location.assign("/CheckOutPage/CheckOut.html");
+     
+>>>>>>> Stashed changes
      
      
 
