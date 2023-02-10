@@ -59,6 +59,7 @@ $(document).ready(function(){
 
   $("#Edit").on("click", function(edit){
     edit.preventDefault();
+    window.location.assign("/EditAccDeets/EditAccDeets.html");
 
   })
   
