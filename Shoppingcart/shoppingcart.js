@@ -95,11 +95,8 @@ $("#submit").on("click", function(e){
        console.log(response);
        window.location.assign("/CheckOutPage/CheckOut.html");
      });
-<<<<<<< Updated upstream
-=======
 
      
->>>>>>> Stashed changes
      
      
 
