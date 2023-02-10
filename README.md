@@ -46,9 +46,16 @@ Features:
 
 Incomplete Features:
 
-1. Edit user details is not fully functional
-2. The functions in script.js cannot produce error message upon submission of incorrect username or password. However it still prevents user from going to the next page during such 
-an event
+1: Edit user details is not fully functional
+2: The functions in script.js cannot produce error message upon submission of incorrect username or password. However it still prevents user from going to the next page during such an event
+
+
+
+
+
+RestDB Login Details (https://idasg2-d416.restdb.io/home/db/idasg2-d416/cards/63e504b9aa86075000042ce0#) 
+User: ErvinW2
+Password: 12N887322n05!
 
 
 Technologies used:
