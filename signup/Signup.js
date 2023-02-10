@@ -26,6 +26,7 @@ $(document).ready(function(){
 
 
         //From RestDB
+        //Sends new account info to the database
         var settings = {
             "async": true,
             "crossDomain": true,

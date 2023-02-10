@@ -1,8 +1,8 @@
 $(document).ready(function(){
-    localStorage.clear();
+    localStorage.clear(); //Ensures that there is no unneccessary data stored
     const User_list = [];
 
-
+    //Create user object
     function User(User_Email, User_password, Username, id){
         this.User_Email = User_Email,
         this.User_password = User_password,
@@ -15,6 +15,7 @@ $(document).ready(function(){
 
 
         //From RestDB
+        //Gets the info of the users from RestDB, adds the user into a list
     var settings = {
         "async": true,
         "crossDomain": true,
@@ -38,7 +39,8 @@ $(document).ready(function(){
 
 
 
-      //Form Listener
+      //Form Listener runs through the list to check if user info entered matches a user in the database. 
+      // If details match, User is then redirected to page1.html where products are displayed
     $("#submit").on("click", function(e){
         e.preventDefault();
 

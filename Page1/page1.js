@@ -11,7 +11,9 @@ let shopitemdata = [
         
     }
 
-let basket = [];
+let basket = []; //Stores items user wishes to purchase
+
+//List containing info of products displayed 
 let productdata = [
     {
         id: "Item-1",
@@ -117,7 +119,7 @@ let productdata = [
    
 
 
-
+    //Saves items in basket to local storage and redirects user to shopping cart page for confirmation of order.
     $("#gotocart").on("click", function(gocart){
         gocart.preventDefault();
         localStorage.setItem("Cart", JSON.stringify(basket));
@@ -126,6 +128,8 @@ let productdata = [
         
     })
 
+
+    //Displayes "Mouse" items when the mouse icon is clicked
   $("#Mb").on("click", function(m){
     products.innerHTML = "";
     for (let i = 12; i<productdata.length; i++){
@@ -145,7 +149,7 @@ let productdata = [
         `
         
         Root.appendChild(html)
-        
+        //Adds item to the basket
         $("#cart" + productdata[i].id).on("click", function(c){
             c.preventDefault();
             let itemAdded = new AddedtoCart(productdata[i].id, productdata[i].ProductName, productdata[i].Price)
@@ -160,7 +164,7 @@ let productdata = [
     }
   })
 
-
+    //Displayes "Headphone" items when the mouse icon is clicked
   $("#Hp").on("click", function(m){
     products.innerHTML = "";
     for (let i = 0; i<12; i++){
@@ -180,7 +184,7 @@ let productdata = [
         `
         
         Root.appendChild(html)
-        
+        //Adds item to the basket
         $("#cart" + productdata[i].id).on("click", function(c){
             c.preventDefault();
             let itemAdded = new AddedtoCart(productdata[i].id, productdata[i].ProductName, productdata[i].Price)
@@ -207,7 +211,7 @@ let productdata = [
 
    
 
-
+  //Prints welcome message
   var obj = JSON.parse(localStorage.getItem("User"));
   document.getElementById("Welc").innerHTML = "Welcome! " + obj.Username;
 

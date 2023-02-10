@@ -1,7 +1,8 @@
-var obj = JSON.parse(localStorage.getItem("User"));
+var obj = JSON.parse(localStorage.getItem("User"));  //Get the account info of the user currently logged in
 console.log(obj.id);
 
 
+//Get the new account information to replace old info
 $("#submit").on("click", function(sub){
     sub.preventDefault();
 
@@ -18,6 +19,7 @@ $("#submit").on("click", function(sub){
 
 
     //From RestDB
+    //Replaces the account details with the new saved details
 var settings = {
     "async": true,
     "crossDomain": true,
@@ -36,7 +38,7 @@ var settings = {
     console.log(response);
   });
   
-  window.location.assign("/EditAccDeets/EditDone.html");
+  window.location.assign("/EditAccDeets/EditDone.html");  //redirects user to another page after change has been made.
 })
 
 

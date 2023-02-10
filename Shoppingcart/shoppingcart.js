@@ -1,3 +1,5 @@
+//Prints the products that user has added to cart
+
 let cart = JSON.parse(localStorage.getItem("Cart"))
 console.log(cart)
 let totalprice = 0
@@ -36,13 +38,13 @@ for (let i = 0; i<cart.length; i++){
     
 
 }
-
+//Displays total bill 
 let total = totalprice.toFixed(2)
 
 document.getElementById("total-price").innerHTML = total
 
 
-
+//Places the order and saves it into the databases
 $("#submit").on("click", function(e){
     e.preventDefault();
 

@@ -4,7 +4,8 @@ $(document).ready(function(){
 
 
 
-
+  //Displays option to confirm user's choice to delete their account and removes it from the database
+  //Upon second confirmation
   $("#Delete").on("click", function(e){
     e.preventDefault();
     console.log("ll");
@@ -56,7 +57,7 @@ $(document).ready(function(){
   
   })
 
-
+//Redirects user to another page after account is deleted
   $("#Edit").on("click", function(edit){
     edit.preventDefault();
     window.location.assign("/EditAccDeets/EditAccDeets.html");
