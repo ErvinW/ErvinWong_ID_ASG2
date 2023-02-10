@@ -43,7 +43,7 @@ $(document).ready(function(){
         
         $.ajax(settings).done(function (response) {
             console.log(response);
-            window.location.assign("index.html"); 
+            window.location.assign("/Index/index.html"); 
         });
     })
 
