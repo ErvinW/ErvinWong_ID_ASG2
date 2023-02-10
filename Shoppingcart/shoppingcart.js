@@ -42,13 +42,6 @@ let total = totalprice.toFixed(2)
 document.getElementById("total-price").innerHTML = total
 
 
-// function Order(Address, CardNo, OrderDeets, User_Email){
-//     this.Address = Address,
-//     this.CardNo = CardNo,
-//     this.OrderDeets = OrderDeets,
-//     this.User_Email = User_Email
-    
-// }
 
 $("#submit").on("click", function(e){
     e.preventDefault();
