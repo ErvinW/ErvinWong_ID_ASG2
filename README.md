@@ -37,3 +37,8 @@ G502.jpg : https://www.rtings.com/mouse/reviews/logitech/g502-hero
 GPro.jpg : https://www.rtings.com/mouse/reviews/logitech/g-pro-x-superlight
 
 Lift.jpg : https://www.rtings.com/mouse/reviews/logitech/lift
+
+Ervin : Most of the JS, index page, checkout page, delete account page, edit account details page, settings page.
+
+Isaac: Most of the CSS, Page1 page(previously did on a different html but brought over), signup page, shopping cart page.
+

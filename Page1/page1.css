@@ -8,6 +8,10 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 
+.flex{
+    display: flex;
+    flex-direction: column;
+}
 
 /* Style for navigation bar */
 .navigation{
@@ -224,3 +228,39 @@ img:hover{
 #Hp{
     margin-right: 60px;
 }
+
+/* Footer */
+#footer {
+    clear: both;
+    position: relative;
+    height: 200px;
+    margin-top: 1200px;
+    color: white;
+    text-decoration: none;
+}
+
+.footer{
+    background: #333;
+    padding-top: 5rem;
+    font-size: 0.9rem;
+  }
+  
+.footer-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6rem;
+    margin-left: 150px;
+  }
+  
+.footer-container div h4{
+    margin-bottom: 1.2rem;
+  }
+  
+.footer-copyright{
+    padding: 1rem 0;
+    text-align: center;
+    margin-top: 3rem;
+    border-top: 1px solid #333;
+    background: #333;
+  }
+  
