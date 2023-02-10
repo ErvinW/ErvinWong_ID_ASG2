@@ -97,6 +97,8 @@ $("#submit").on("click", function(e){
      $.ajax(settings).done(function (response) {
        console.log(response);
      });
+
+     window.location.assign("/CheckOutPage/CheckOut.html");
      
      
 

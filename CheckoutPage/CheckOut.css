@@ -1,0 +1,35 @@
+
+
+.play{
+    margin-left: 40%;
+    margin-top: 10%;
+}
+
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1{
+    text-align: center;
+}
+
+.home{
+    margin-left: 40%;
+    width:20%;
+    color: white;
+    background-color: #00704A;
+    margin-top: 3%;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-align: center;
+    border: none;
+}
+
+
+
+.home:hover{
+    transform: scale(1.1);
+    background-color: #4C9F87;
+    cursor: pointer;
+}
