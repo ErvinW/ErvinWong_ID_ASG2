@@ -40,25 +40,18 @@ for (let i = 0; i<cart.length; i++){
 
 
 document.getElementById("total-price").innerHTML = totalprice
-// var removeCartItemButtons = document.querySelectorAll(".remove-btn")
-// for (var i = 0; i<removeCartItemButtons.length; i++){
-//     var button = removeCartItemButtons[i]
-//     button.addEventListener('click',function(event){
-//         var buttonClicked = event.target
-//         buttonClicked.parentElement.parentElement.parentElement.remove()
-//     }) 
-// }
 
 
 
 
-function Order(Address, CardNo, OrderDeets, User_Email){
-    this.Address = Address,
-    this.CardNo = CardNo,
-    this.OrderDeets = OrderDeets,
-    this.User_Email = User_Email
+
+// function Order(Address, CardNo, OrderDeets, User_Email){
+//     this.Address = Address,
+//     this.CardNo = CardNo,
+//     this.OrderDeets = OrderDeets,
+//     this.User_Email = User_Email
     
-}
+// }
 
 $("#submit").on("click", function(e){
     e.preventDefault();
@@ -103,7 +96,13 @@ $("#submit").on("click", function(e){
      
      $.ajax(settings).done(function (response) {
        console.log(response);
+       window.location.assign("/CheckOutPage/CheckOut.html");
      });
+<<<<<<< Updated upstream
+=======
+
+     
+>>>>>>> Stashed changes
      
      
 
