@@ -17,7 +17,7 @@ Design Process:
 Our website is catered to the general public as technology is everywhere now and there is a need for tech appliances.
 As the sellers we strive to better the publics quality of life when handling tech appliances and at the same time offerring them at affordable prices.
 
-WireFrame Link:()
+WireFrame Link:(https://imgur.com/a/JvTN7ms)
 
 
 
