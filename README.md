@@ -44,17 +44,15 @@ Features:
 19: delete account and edit account also have a confirmation animation.
 20: checked out items are sent into the database where it will store the items information that are checked out.
 
-<<<<<<< Updated upstream
-=======
 Incomplete Features:
 
-1. Edit user details is not fully functional
-2. The functions in script.js cannot produce error message upon submission of incorrect username or password. However it still prevents user from going to the next page during such an event
+1: Edit user details is not fully functional
+2: The functions in script.js cannot produce error message upon submission of incorrect username or password. However it still prevents user from going to the next page during such an event
 
 
 
 
->>>>>>> Stashed changes
+
 RestDB Login Details (https://idasg2-d416.restdb.io/home/db/idasg2-d416/cards/63e504b9aa86075000042ce0#) 
 User: ErvinW2
 Password: 12N887322n05!
