@@ -40,16 +40,6 @@ for (let i = 0; i<cart.length; i++){
 let total = totalprice.toFixed(2)
 
 document.getElementById("total-price").innerHTML = total
-// var removeCartItemButtons = document.querySelectorAll(".remove-btn")
-// for (var i = 0; i<removeCartItemButtons.length; i++){
-//     var button = removeCartItemButtons[i]
-//     button.addEventListener('click',function(event){
-//         var buttonClicked = event.target
-//         buttonClicked.parentElement.parentElement.parentElement.remove()
-//     }) 
-// }
-
-
 
 
 function Order(Address, CardNo, OrderDeets, User_Email){
