@@ -38,7 +38,7 @@ var settings = {
     console.log(response);
   });
   
-  window.location.assign("EditAccDeets/EditDone.html");  //redirects user to another page after change has been made.
+  window.location.assign("/EditAccDeets/EditDone.html");  //redirects user to another page after change has been made.
 })
 
 
